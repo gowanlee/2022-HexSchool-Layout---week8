@@ -1,0 +1,593 @@
+---
+title: 藝術品系列作品 - NFT藝術家交易平台 | ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: artworks
+---
+
+<main class="mt-13 mt-lg-lg mb-10 mb-lg-md">
+
+    <section class="container pt-6 pt-lg-10">
+        <div class="row">
+            <div class="col-lg-4 col-xl-3 d-none d-lg-block">
+                <form class="py-6 border bg-white">
+
+                    <!-- 網路 -->
+                    <div class="border-bottom">
+                        <div class="px-6">
+                            <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseInternet" aria-expanded="true" aria-controls="collapseInternet">
+                                <p>網路</p>
+                                <i class="fa-solid fa-angle-up open"></i>
+                                <i class="fa-solid fa-angle-down close"></i>
+                            </button>
+                            
+                            <div class="collapse show pb-6" id="collapseInternet">
+                                <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                    <label class="form-check-label" for="selectEthereumPc">以太坊</label>
+                                    <input class="form-check-input border-primary" type="checkbox" id="selectEthereumPc">
+                                </div>
+                                <div class="form-check d-flex justify-content-between ps-0">
+                                    <label class="form-check-label" for="selectBnbPc">BNB 智能鏈</label>
+                                    <input class="form-check-input border-primary" type="checkbox" id="selectBnbPc" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 狀態 -->
+                    <div class="border-bottom">
+                        <div class="pt-6 px-6">
+                            <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseState" aria-expanded="true" aria-controls="collapseState">
+                                <p>狀態</p>
+                                <i class="fa-solid fa-angle-up open"></i>
+                                <i class="fa-solid fa-angle-down close"></i>
+                            </button>
+                            
+                            <div class="collapse show pb-6" id="collapseState">
+                                <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                    <label class="form-check-label" for="selectNoSalePc">僅展示</label>
+                                    <input class="form-check-input border-primary" type="checkbox" id="selectNoSalePc">
+                                </div>
+                                <div class="form-check d-flex justify-content-between ps-0">
+                                    <label class="form-check-label" for="selectSalePc">拍賣中</label>
+                                    <input class="form-check-input border-primary" type="checkbox" id="selectSalePc" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 價格 -->
+                    <div class="border-bottom">
+                        <div class="pt-6 px-6">
+                            <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+                                <p>價格</p>
+                                <i class="fa-solid fa-angle-up open"></i>
+                                <i class="fa-solid fa-angle-down close"></i>
+                            </button>
+                            
+                            <div class="collapse show pb-6" id="collapsePrice">
+                                <div class="d-flex gap-2 gap-xl-1 align-items-center">
+                                    <div style="height: 40px; width: 44%;">
+                                        <select class="form-select mb-3 border-black h-100" aria-label="Default select example">
+                                            <option selected>ETH</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <input type="number" class="rounded-0 border" style="height: 40px; width: 28%;">
+                                    <p>－</p>
+                                    <input type="number" class="rounded-0 border" style="height: 40px; width: 28%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="pt-6 px-6 fw-bold text-gray">屬性</p>
+
+                    <!-- 品種 -->
+                    <div class="pt-6 px-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseBreeds" aria-expanded="true" aria-controls="collapseBreeds">
+                            <p>品種</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse show pb-6" id="collapseBreeds">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectCrestedMynaPc">八哥</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectCrestedMynaPc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectBudgerigarPc">虎皮鸚鵡</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBudgerigarPc" checked>
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectBohemianWaxwingPc">太平鳥</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBohemianWaxwingPc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between ps-0">
+                                <label class="form-check-label" for="selectThrostlePc">畫眉鳥</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectThrostlePc">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 鳥的數量 -->
+                    <div class="pt-6 px-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseNumber" aria-expanded="false" aria-controls="collapseNumber">
+                            <p>鳥的數量</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse pb-6" id="collapseNumber">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectNumberOnePc">1隻</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectNumberOnePc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectNumberTwoPc">2隻</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectNumberTwoPc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectNumberThreePc">3隻</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectNumberThreePc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectNumberOverFourPc">4隻以上</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectNumberOverFourPc">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 是否有花草 -->
+                    <div class="pt-6 px-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapsePlant" aria-expanded="false" aria-controls="collapsePlant">
+                            <p>是否有花草</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse pb-6" id="collapsePlant">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectYesPc">是</label>
+                                <input class="form-check-input border-primary" name="collapsePlant" type="radio" id="selectYesPc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between ps-0">
+                                <label class="form-check-label" for="selectNoPc">否</label>
+                                <input class="form-check-input border-primary" name="collapsePlant" type="radio" id="selectNoPc">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 鳥的顏色 -->
+                    <div class="pt-6 px-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
+                            <p>鳥的顏色</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse pb-6" id="collapseColor">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectBrownPc">棕</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBrownPc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectBluePc">藍</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBluePc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectRedPc">紅</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectRedPc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectYellowPc">黃</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectYellowPc">
+                            </div>
+                            <div class="form-check d-flex justify-content-between ps-0">
+                                <label class="form-check-label" for="selectBlackPc">黑</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBlackPc">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-8 col-xl-9">
+                <div class="d-xl-flex align-items-xl-center gap-6 mb-10">
+                    <div class="mb-4 mg-lg-0 w-xl-60">
+                        <a href="./artist-intro.html" class="link-primary d-flex align-items-center mb-1">
+                            <img class="rounded-circle me-4" style="width: 32px; height: 32px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist01.jpg?raw=true" alt="">
+                            <h3 class="h6 font-squada">Michael</h3>
+                        </a>
+                        <h2 class="mb-2">我家外面的鳥</h2>
+                        <p class="mb-4">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                    </div>
+                    <div class="w-xl-40">   
+                        <ul class="list-unstyled border d-flex text-center bg-white">
+                            <li class="border-end w-25 py-4 px-2 position-relative">
+                                <p class="fs-sm mb-1 mb-lg-2">項目</p>
+                                <p class="font-squada fs-5">6.4 k</p>
+                                <span class="position-absolute bg-white top-50 translate-middle" style="width: 2px; height: 37px; right: -2px;"></span>
+                            </li>
+                            <li class="border-end w-25 py-4 px-2 position-relative">
+                                <p class="fs-sm mb-1 mb-lg-2">擁有者</p>
+                                <p class="font-squada fs-5">2.5 k</p>
+                                <span class="position-absolute bg-white top-50 translate-middle" style="width: 2px; height: 37px; right: -2px;"></span>
+                            </li>
+                            <li class="border-end w-25 py-4 px-2 position-relative">
+                                <p class="fs-sm mb-1 mb-lg-2">底價</p>
+                                <p class="font-squada fs-5 d-flex align-items-center justify-content-center"><i class="fa-brands fa-ethereum me-1" style="font-size: 9px;"></i>1.38 k</p>
+                                <span class="position-absolute bg-white top-50 translate-middle" style="width: 2px; height: 37px; right: -2px;"></span>
+                            </li>
+                            <li class="w-25 py-4 px-2">
+                                <p class="fs-sm mb-1 mb-lg-2">總額</p>
+                                <p class="font-squada fs-5">2.8 k</p>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="d-flex justify-content-end mb-6 mb-lg-10">
+                    <div style="width: 156px;">
+                        <select class="form-select border-black py-2 px-10">
+                            <option selected>最新上架</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row" data-masonry='{"percentPosition": true }' style="position: relative; height: 1044px;">
+                    <div class="col-6 col-xl-4 mb-6 mb-lg-12" style="position: absolute; left: 0%; top: 0px;">
+                      <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative">
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art20.jpg?raw=true" alt="這兩隻也太像企鵝了吧">
+                          <div class="d-none hover-block-lg">
+                            <div class="position-absolute bg-black position-absolute opacity-70" style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                            <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between" style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                              <div class="text-white">
+                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                              </div>
+                              <span class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">這兩隻也太像企鵝了吧</h4>
+                      </a>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-6 mb-lg-12" style="position: absolute; left: 50%; top: 0px;">
+                      <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative">
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art21.jpg?raw=true" alt="兩情相悅">
+                          <div class="d-none hover-block-lg">
+                            <div class="position-absolute bg-black position-absolute opacity-70" style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                            <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between" style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                              <div class="text-white">
+                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                              </div>
+                              <span class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">兩情相悅</h4>
+                      </a>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-6 mb-lg-12" style="position: absolute; left: 50%; top: 171px;">
+                      <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative">
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true" alt="群聚的小鳥們">
+                          <div class="d-none hover-block-lg">
+                            <div class="position-absolute bg-black position-absolute opacity-70" style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                            <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between" style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                              <div class="text-white">
+                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                              </div>
+                              <span class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">群聚的小鳥們</h4>
+                      </a>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-6 mb-lg-12" style="position: absolute; left: 0%; top: 362px;">
+                      <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative">
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art23.jpg?raw=true" alt="與你分享的快樂勝過獨自擁有">
+                          <div class="d-none hover-block-lg">
+                            <div class="position-absolute bg-black position-absolute opacity-70" style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                            <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between" style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                              <div class="text-white">
+                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                              </div>
+                              <span class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">與你分享的快樂勝過獨自擁有</h4>
+                      </a>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-6 mb-lg-12" style="position: absolute; left: 0%; top: 501px;">
+                      <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative">
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art24.jpg?raw=true" alt="會唱meta的鳥">
+                          <div class="d-none hover-block-lg">
+                            <div class="position-absolute bg-black position-absolute opacity-70" style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                            <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between" style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                              <div class="text-white">
+                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                              </div>
+                              <span class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">會唱meta的鳥</h4>
+                      </a>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-6 mb-lg-12" style="position: absolute; left: 50%; top: 549px;">
+                      <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative">
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art25.jpg?raw=true" alt="一大一小兩個恰恰好">
+                          <div class="d-none hover-block-lg">
+                            <div class="position-absolute bg-black position-absolute opacity-70" style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                            <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between" style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                              <div class="text-white">
+                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                              </div>
+                              <span class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">一大一小兩個恰恰好</h4>
+                      </a>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-6 mb-lg-12 d-lg-none" style="position: absolute; left: 0%; top: 679px;">
+                      <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative">
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true" alt="群聚的小鳥們">
+                          <div class="d-none hover-block-lg">
+                            <div class="position-absolute bg-black position-absolute opacity-70" style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                            <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between" style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                              <div class="text-white">
+                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                              </div>
+                              <span class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">群聚的小鳥們</h4>
+                      </a>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-6 mb-lg-12 d-lg-none d-lg-block" style="position: absolute; left: 0%; top: 818px;">
+                      <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative">
+                          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art23.jpg?raw=true" alt="與你分享的快樂勝過獨自擁有">
+                          <div class="d-none hover-block-lg">
+                            <div class="position-absolute bg-black position-absolute opacity-70" style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                            <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between" style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                              <div class="text-white">
+                                <p class="fw-bold mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                                <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                              </div>
+                              <span class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">與你分享的快樂勝過獨自擁有</h4>
+                      </a>
+                  </div>
+            </div>
+        </div>
+        
+        <!-- Modal button -->
+        <div class="fixed-bottom text-center d-lg-none" style="bottom: 20px;">
+            <button type="button" class="btn btn-primary py-2 px-12" data-bs-toggle="modal" data-bs-target="#artworksModal">
+                篩選條件<span class="ms-1 font-squada">2</span>
+            </button>
+        </div>
+
+    </section>
+
+     <!-- Modal -->
+     <div class="modal fade" id="artworksModal" tabindex="-1" aria-labelledby="artworksModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-lg-down d-lg-none">
+            <div class="modal-content">
+                <div class="modal-header px-3 py-4 justify-content-center position-relative">
+                    <h5 class="modal-title fw-normal" id="artworksModalLabel">篩選條件</h5>
+                    <button type="button" class="link-primary btn position-absolute" style="right: 12px; top: 17px;" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark fs-4"></i></button>
+                </div>
+                <form class="modal-body px-3">
+
+                    <!-- 網路 -->
+                    <div class="pt-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseInternet" aria-expanded="true" aria-controls="collapseInternet">
+                            <p>網路</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse show pb-6 border-bottom border-gray" id="collapseInternet">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectEthereum">以太坊</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectEthereum">
+                            </div>
+                            <div class="form-check d-flex justify-content-between ps-0">
+                                <label class="form-check-label" for="selectBnb">BNB 智能鏈</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBnb" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 狀態 -->
+                    <div class="pt-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseState" aria-expanded="true" aria-controls="collapseState">
+                            <p>狀態</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse show pb-6 border-bottom border-gray" id="collapseState">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectNoSale">僅展示</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectNoSale">
+                            </div>
+                            <div class="form-check d-flex justify-content-between ps-0">
+                                <label class="form-check-label" for="selectSale">拍賣中</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectSale" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 價格 -->
+                    <div class="pt-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+                            <p>價格</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse show pb-6 border-bottom border-gray" id="collapsePrice">
+                            <div class="d-flex gap-2 align-items-center">
+                                <div style="height: 40px; width: 80px;">
+                                    <select class="form-select mb-3 border-black h-100" aria-label="Default select example">
+                                        <option selected>ETH</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <input type="number" class="rounded-0 border" style="height: 40px; width: 80px;">
+                                <p>－</p>
+                                <input type="number" class="rounded-0 border" style="height: 40px; width: 80px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="pt-6 fw-bold text-gray">屬性</p>
+
+                    <!-- 品種 -->
+                    <div class="pt-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseBreeds" aria-expanded="true" aria-controls="collapseBreeds">
+                            <p>品種</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse show pb-6" id="collapseBreeds">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectCrestedMyna">八哥</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectCrestedMyna">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectBudgerigar">虎皮鸚鵡</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBudgerigar" checked>
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectBohemianWaxwing">太平鳥</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBohemianWaxwing">
+                            </div>
+                            <div class="form-check d-flex justify-content-between ps-0">
+                                <label class="form-check-label" for="selectThrostle">畫眉鳥</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectThrostle">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 鳥的數量 -->
+                    <div class="pt-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseNumber" aria-expanded="false" aria-controls="collapseNumber">
+                            <p>鳥的數量</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse pb-6" id="collapseNumber">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectNumberOne">1隻</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectNumberOne">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectNumberTwo">2隻</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectNumberTwo">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectNumberThree">3隻</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectNumberThree">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectNumberOverFour">4隻以上</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectNumberOverFour">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 是否有花草 -->
+                    <div class="pt-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapsePlant" aria-expanded="false" aria-controls="collapsePlant">
+                            <p>是否有花草</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse pb-6" id="collapsePlant">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectYew">是</label>
+                                <input class="form-check-input border-primary" type="radio" name="collapsePlant" id="selectYew">
+                            </div>
+                            <div class="form-check d-flex justify-content-between ps-0">
+                                <label class="form-check-label" for="selectNo">否</label>
+                                <input class="form-check-input border-primary" type="radio" name="collapsePlant" id="selectNo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 鳥的顏色 -->
+                    <div class="pt-6">
+                        <button class="bg-transparent border-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse mb-4 px-0" type="button" data-bs-toggle="collapse" href="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
+                            <p>鳥的顏色</p>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                        
+                        <div class="collapse pb-6" id="collapseColor">
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectBrown">棕</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBrown">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectBlue">藍</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBlue">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectRed">紅</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectRed">
+                            </div>
+                            <div class="form-check d-flex justify-content-between mb-2 ps-0">
+                                <label class="form-check-label" for="selectYellow">黃</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectYellow">
+                            </div>
+                            <div class="form-check d-flex justify-content-between ps-0">
+                                <label class="form-check-label" for="selectBlack">黑</label>
+                                <input class="form-check-input border-primary" type="checkbox" id="selectBlack">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-lg"></div>
+
+                    <button type="submit" class="btn btn-secondary py-3 px-6 border text-white fs-md fixed-bottom">確認</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>

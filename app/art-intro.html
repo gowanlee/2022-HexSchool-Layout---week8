@@ -1,0 +1,306 @@
+---
+title: 藝術品介紹 - NFT藝術家交易平台 | ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: art-intro
+---
+
+<main class="mt-13 mt-lg-lg mb-10 mb-lg-md">
+
+    <section class="container pt-6 pt-lg-10 pb-10">
+
+        <div class="row">
+
+            <div class="col-lg-6 mb-6">
+                <img class="w-100" style="max-height: 546px; object-fit: cover;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art21.jpg?raw=true" alt="兩情相悅">
+            </div>
+
+            <div class="col-lg-6 mb-6">
+                <div class="card h-100">
+                    <div class="card-header px-4 pt-4 pb-6 bg-white px-lg-10 pb-lg-8">
+                        <div class="d-lg-flex flex-lg-row-reverse justify-content-between align-items-center mb-lg-4">
+                            <a href="./artist-intro.html" class="link-primary d-flex align-items-center mb-2 mb-lg-0">
+                                <img class="rounded-circle me-2" style="width: 32px; height: 32px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist01.jpg?raw=true" alt="Michael">
+                                <h3 class="h6 font-squada">Michael</h3>
+                            </a>
+                            <h2 class="mb-4 fs-lg mb-lg-0">兩情相悅</h2>
+                        </div>
+                        <p class="fs-sm text-gray mb-2">最高出價者</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-2">
+                                <img class="rounded-circle" style="width: 32px; height: 32px; object-fit: cover;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/user01.jpg?raw=true" alt="user01">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <span class="font-squada">0.044Eth</span>
+                            </div>
+                            <button type="button" class="btn btn-secondary text-white border px-12 py-2">出價</button>
+                        </div>
+                    </div>
+                    <div class="card-body py-6 px-4">
+                        <p class="mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                        <p class="mb-4">而且其中一隻竟然有梳油頭，不知道是不是有用定型液，他們感情真好，出門還會特別打扮，看著看著不禁思考，我怎麼會變這樣？</p>
+                        <p class="mb-4">好羨慕啊，我也要有這樣兩情相悅的另一半。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1160px;">
+            <div class="col-lg-6 mb-6" style="position: absolute; left: 0%; top: 0px;">
+                <div class="card">
+                    <div class="card-header p-4 p-lg-6">
+                        <button class="bg-transparent border-0 p-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse" type="button" data-bs-toggle="collapse" href="#collapseAttributes" aria-expanded="true" aria-controls="collapseAttributes">
+                            <h4 class="h6">屬性</h4>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                    </div>
+                    <div class="card-body collapse show py-6 px-4 px-lg-6" id="collapseAttributes">
+                        <ul class="list-unstyled">
+                            <li class="d-flex justify-content-between pb-2 border-bottom border-light">
+                                <h5 class="fs-6 fw-normal">品種</h5>
+                                <p class="text-gray">青藍金剛鸚鵡</p>
+                            </li>
+                            <li class="d-flex justify-content-between py-2 border-bottom border-light">
+                                <h5 class="fs-6 fw-normal">鳥的數量</h5>
+                                <p class="text-gray">2隻</p>
+                            </li>
+                            <li class="d-flex justify-content-between py-2 border-bottom border-light">
+                                <h5 class="fs-6 fw-normal">是否有花草</h5>
+                                <p class="text-gray">是</p>
+                            </li>
+                            <li class="d-flex justify-content-between pt-2">
+                                <h5 class="fs-6 fw-normal">鳥的顏色</h5>
+                                <p class="text-gray">藍色</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-6" style="position: absolute; left: 50%; top: 0px;">
+                <div class="card">
+                    <div class="card-header p-4 p-lg-6">
+                        <button class="bg-transparent border-0 p-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse" type="button" data-bs-toggle="collapse" href="#collapseBidder" aria-expanded="true" aria-controls="collapseBidder">
+                            <h4 class="h6">出價</h4>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                    </div>
+                    <div class="card-body collapse show py-6 px-4 px-lg-6" id="collapseBidder">
+                        <table class="table table-borderless">
+                            <thead class="table-light">
+                              <tr class="fs-sm">
+                                <th class="fw-normal text-center text-md-start">價格</th>
+                                <th class="fw-normal">期限</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="border-bottom border-light">
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img class="rounded-circle" style="width: 32px; height: 32px; object-fit: cover;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist03.jpg?raw=true" alt="user01">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="font-squada">0.044Eth</span>
+                                    </div>
+                                </td>
+                                <td class="text-gray text-end text-md-start">3個月後</td>
+                              </tr>
+                              <tr class="border-bottom border-light">
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img class="rounded-circle" style="width: 32px; height: 32px; object-fit: cover;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/user02.jpg?raw=true" alt="user02">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="font-squada">0.054Eth</span>
+                                    </div>
+                                </td>
+                                <td class="text-gray text-end text-md-start">1個月後</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img class="rounded-circle" style="width: 32px; height: 32px; object-fit: cover;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/user03.jpg?raw=true" alt="user03">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <span class="font-squada">0.044Eth</span>
+                                    </div>
+                                </td>
+                                <td class="text-gray text-end text-md-start">2週後</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-6" style="position: absolute; left: 50%; top: 222px;">
+                <div class="card">
+                    <div class="card-header p-4 p-lg-6">
+                        <button class="bg-transparent border-0 p-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse" type="button" data-bs-toggle="collapse" href="#collapseBaseInfo" aria-expanded="true" aria-controls="collapseBaseInfo">
+                            <h4 class="h6">基本資訊</h4>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                    </div>
+                    <div class="card-body collapse show py-6 px-4 px-lg-6" id="collapseBaseInfo">
+                        <ul class="list-unstyled">
+                            <li class="d-flex justify-content-between pb-2 border-bottom border-light">
+                                <h5 class="fs-6 fw-normal">擁有者</h5>
+                                <p class="text-gray">0xa543x…1283</p>
+                            </li>
+                            <li class="d-flex justify-content-between py-2 border-bottom border-light">
+                                <h5 class="fs-6 fw-normal">代幣ID</h5>
+                                <p class="text-gray">#1234</p>
+                            </li>
+                            <li class="d-flex justify-content-between pt-2">
+                                <h5 class="fs-6 fw-normal">合約地址</h5>
+                                <p class="text-gray">青藍金剛鸚鵡</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" style="position: absolute; left: 0%; top: 434px;">
+                <div class="card">
+                    <div class="card-header p-4 p-lg-6">
+                        <button class="bg-transparent border-0 p-0 link-primary fw-bold d-flex justify-content-between align-items-center w-100 btn-collapse" type="button" data-bs-toggle="collapse" href="#collapseRecord" aria-expanded="true" aria-controls="collapseRecord">
+                            <h4 class="h6">交易歷史</h4>
+                            <i class="fa-solid fa-angle-up open"></i>
+                            <i class="fa-solid fa-angle-down close"></i>
+                        </button>
+                    </div>
+                    <div class="card-body collapse show py-6 px-4 px-lg-6" id="collapseRecord">
+                        <table class="table table-borderless">
+                            <thead class="table-light">
+                              <tr>
+                                <th class="fw-normal">市件</th>
+                                <th class="fw-normal">價格</th>
+                                <th class="fw-normal">從</th>
+                                <th class="fw-normal">時間</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="border-bottom border-light">
+                                <td>上架</td>
+                                <td>2nb</td>
+                                <td><img class="rounded-circle" style="height: 24px; width: 24px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist02.jpg?raw=true" alt=""></td>
+                                <td class="text-gray">14小時前</td>
+                              </tr>
+                              <tr>
+                                <td>出價</td>
+                                <td>2nb</td>
+                                <td><img class="rounded-circle" style="height: 24px; width: 24px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist01.jpg?raw=true" alt=""></td>
+                                <td class="text-gray">2週後</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+    </section>
+
+    <section class="container">
+
+        <!-- title -->
+        <div class="mb-6 border-bottom mb-lg-12 d-flex justify-content-between align-items-end">
+            <h2 class="font-squada fs-lg-lg lh-1 pb-2 pb-lg-4">Other<span class="h5 ms-4 d-none d-lg-inline-block">其餘作品</span></h2>
+            <a class="font-squada fs-md px-12 py-2 btn-triangle btn-border" href="./artworks.html">MORE</a>
+        </div>
+
+        <!-- swiper -->
+        <div class="swiper" id="artworksSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide mb-8 mb-lg-14">
+                    <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative h-200px h-md-300px">
+                            <img class="w-100 h-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true"
+                                alt="群聚的小鳥們">
+                            <div class="d-none hover-block-lg">
+                                <div class="position-absolute bg-black position-absolute opacity-70"
+                                    style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                    style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                    <div class="text-white">
+                                        <p class="fw-bold mb-4">群聚的小鳥們</p>
+                                        <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                    </div>
+                                    <span
+                                        class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">群聚的小鳥們</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide mb-8 mb-lg-14">
+                    <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative h-200px h-md-300px">
+                            <img class="w-100 h-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art27.jpg?raw=true" alt="我真的受傷了">
+                            <div class="d-none hover-block-lg">
+                                <div class="position-absolute bg-black position-absolute opacity-70"
+                                    style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                    style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                    <div class="text-white">
+                                        <p class="fw-bold mb-4">我真的受傷了</p>
+                                        <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                    </div>
+                                    <span
+                                        class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">我真的受傷了</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide mb-8 mb-lg-14">
+                    <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative h-200px h-md-300px">
+                            <img class="w-100 h-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art20.jpg?raw=true" alt="這兩隻也太像企鵝了吧">
+                            <div class="d-none hover-block-lg">
+                                <div class="position-absolute bg-black position-absolute opacity-70"
+                                    style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                    style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                    <div class="text-white">
+                                        <p class="fw-bold mb-4">這兩隻也太像企鵝了吧</p>
+                                        <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                    </div>
+                                    <span
+                                        class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">這兩隻也太像企鵝了吧</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide mb-8 mb-lg-14">
+                    <a href="./art-intro.html" class="hover">
+                        <div class="bg-white p-2 p-lg-6 position-relative h-200px h-md-300px">
+                            <img class="w-100 h-100" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true"
+                                alt="群聚囉～小鳥">
+                            <div class="d-none hover-block-lg">
+                                <div class="position-absolute bg-black position-absolute opacity-70"
+                                    style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                    style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                    <div class="text-white">
+                                        <p class="fw-bold mb-4">群聚囉～小鳥</p>
+                                        <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                    </div>
+                                    <span
+                                        class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">群聚囉～小鳥</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+        </div>
+
+    </section>
+    
+</main>

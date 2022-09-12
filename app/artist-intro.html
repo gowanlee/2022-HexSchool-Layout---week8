@@ -1,0 +1,348 @@
+---
+title: 藝術家介紹 - NFT藝術家交易平台 | ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: artist-intro
+---
+
+<main class="mt-13 mt-lg-lg">
+
+    <!-- artist intro start -->
+    <section class="container pt-6 pt-lg-10 mb-4 mb-lg-14">
+        <div class="row">
+            <div class="col-lg-9 d-md-flex mb-4 mb-lg-0">
+                <div class="w-md-40">
+                    <img class="w-100 h-100" style="object-fit: cover;"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist01.jpg?raw=true"
+                        alt="Michael">
+                </div>
+                <div class="w-md-60 border bg-white py-6 px-4 pb-lg-8 px-6">
+                    <div class="d-flex justify-content-between mb-2 mb-lg-4">
+                        <h2 class="font-squada">Michael</h2>
+                        <div class="d-flex align-items-center gap-2">
+                            <a href="#" class="link-primary"><i class="fa-brands fa-discord"></i></a>
+                            <a href="#" class="link-primary"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="link-primary"><i class="fa-solid fa-globe"></i></a>
+                            <a href="#" class="link-primary"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="font-squada lh-1 mb-6 h6">0x3ya666…88ef</h3>
+                    <p>Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-0">
+                <ul class="list-unstyled border bg-white h-lg-100">
+                    <li class="py-4 px-6 d-flex justify-content-between align-items-center border-bottom">
+                        <p class="fw-bold">販售中</p>
+                        <p class="fs-2 font-squada lh-1">168</p>
+                    </li>
+                    <li class="py-4 px-6 d-flex justify-content-between align-items-center border-bottom">
+                        <p class="fw-bold">地板價格</p>
+                        <p class="fs-2 font-squada lh-1">0.6 ETH</p>
+                    </li>
+                    <li class="py-4 px-6 d-flex justify-content-between align-items-center border-bottom">
+                        <p class="fw-bold">7 日成交</p>
+                        <p class="fs-2 font-squada lh-1">8.8 ETH</p>
+                    </li>
+                    <li class="py-4 px-6 pb-lg-0 d-flex justify-content-between align-items-center">
+                        <p class="fw-bold">30 日成交</p>
+                        <p class="fs-2 font-squada lh-1">23.1 ETH</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- artist intro end -->
+
+    <!-- nav-tabs start -->
+    <section class="container mb-10 mb-lg-md">
+        <ul class="nav nav-tabs mb-6 mb-lg-10" id="artistTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active font-squada fw-bold fs-2 fs-lg-lg p-4 px-lg-12" id="artistArtWorks-tab" data-bs-toggle="tab"
+                    data-bs-target="#artistArtWorks" type="button" role="tab" aria-controls="artistArtWorks"
+                    aria-selected="true">Art Works<span class="fs-5 ms-4 d-none d-lg-inline-block">系列作品</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link font-squada fw-bold fs-2 fs-lg-lg p-4 px-lg-12" id="artistCollection-tab" data-bs-toggle="tab"
+                    data-bs-target="#artistCollection" type="button" role="tab" aria-controls="artistCollection"
+                    aria-selected="false">Collection<span class="fs-5 ms-4 d-none d-lg-inline-block">收藏品</span></button>
+            </li>
+        </ul>
+        <div class="tab-content" id="artistTabContent">
+            <div class="tab-pane fade show active" id="artistArtWorks" role="tabpanel"
+                aria-labelledby="artistArtWorks-tab">
+                <div
+                    class="position-relative border px-4 py-8 bg-white mb-4 mb-lg-md pt-lg-12 pb-lg-xl px-lg-lg d-lg-flex justify-content-between align-items-center">
+                    <div class="triangle-left-top position-absolute top-0 start-0"></div>
+                    <div class="triangle-right-top position-absolute top-0 end-0"></div>
+                    <div class="w-lg-60">
+                        <h3 class="fs-4 mb-4">追求者送我的花</h3>
+                        <p class="mb-6">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+                    </div>
+                    <img class="mb-4 border border-10 d-lg-none"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg?raw=true"
+                        alt="追求者送我的花">
+                    <div class="text-center w-lg-40 text-lg-end"><a
+                            class="btn-triangle btn-white font-squada px-12 py-2 fs-md" href="./artworks.html">MORE</a></div>
+                    <ul class="list-unstyled d-none d-lg-flex gap-2 position-absolute"
+                        style="bottom: -18%; left: 105px; right: 105px;">
+                        <li class="w-25">
+                            <div style="height: 200px;"><img class="mb-4 border border-10 w-100 h-100"
+                                    style="object-fit: cover;"
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg?raw=true"
+                                    alt="追求者送我的花"></div>
+                        </li>
+                        <li class="w-25">
+                            <div style="height: 200px;"><img class="mb-4 border border-10 w-100 h-100"
+                                    style="object-fit: cover;"
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art30.jpg?raw=true"
+                                    alt="art-30"></div>
+                        </li>
+                        <li class="w-25">
+                            <div style="height: 200px;"><img class="mb-4 border border-10 w-100 h-100"
+                                    style="object-fit: cover;"
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art14.jpg?raw=true"
+                                    alt="art-14"></div>
+                        </li>
+                        <li class="w-25">
+                            <div style="height: 200px;"><img class="mb-4 border border-10 w-100 h-100"
+                                    style="object-fit: cover;"
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art29.jpg?raw=true"
+                                    alt="art-29"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="position-relative border px-4 py-8 bg-white mb-4 mb-lg-xl pt-lg-12 pb-lg-xl px-lg-lg d-lg-flex justify-content-between align-items-center">
+                    <div class="triangle-left-top position-absolute top-0 start-0"></div>
+                    <div class="triangle-right-top position-absolute top-0 end-0"></div>
+                    <div class="w-lg-60">
+                        <h3 class="fs-4 mb-4">我家窗前的鳥</h3>
+                        <p class="mb-6">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                    </div>
+                    <img class="mb-4 border border-10 d-lg-none"
+                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art27.jpg?raw=true"
+                        alt="我家窗前的鳥">
+                    <div class="text-center w-lg-40 text-lg-end"><a
+                            class="btn-triangle btn-white font-squada px-12 py-2 fs-md" href="./artworks.html">MORE</a></div>
+                    <ul class="list-unstyled d-none d-lg-flex gap-2 position-absolute"
+                        style="bottom: -18%; left: 105px; right: 105px;">
+                        <li class="w-25">
+                            <div style="height: 200px;"><img class="mb-4 border border-10 w-100 h-100"
+                                    style="object-fit: cover;"
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art27.jpg?raw=true"
+                                    alt="我家窗前的鳥"></div>
+                        </li>
+                        <li class="w-25">
+                            <div style="height: 200px;"><img class="mb-4 border border-10 w-100 h-100"
+                                    style="object-fit: cover;"
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art21.jpg?raw=true"
+                                    alt="art-21"></div>
+                        </li>
+                        <li class="w-25">
+                            <div style="height: 200px;"><img class="mb-4 border border-10 w-100 h-100"
+                                    style="object-fit: cover;"
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art26.jpg?raw=true"
+                                    alt="art-26"></div>
+                        </li>
+                        <li class="w-25">
+                            <div style="height: 200px;"><img class="mb-4 border border-10 w-100 h-100"
+                                    style="object-fit: cover;"
+                                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true"
+                                    alt="art-22"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="artistCollection" role="tabpanel" aria-labelledby="artistCollection-tab">
+                <div class="row" data-masonry='{"percentPosition": true }'
+                    style="position: relative; height: 1044px;">
+                    <div class="col-6 col-md-4 col-xl-3 mb-4 mb-lg-12" style="position: absolute; left: 0%; top: 0px;">
+                        <a href="./art-intro.html" class="hover">
+                            <div class="bg-white p-2 p-lg-6 position-relative">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art09.jpg?raw=true"
+                                    alt="區塊戀-他的私生活">
+                                <div class="d-none hover-block-lg">
+                                    <div class="position-absolute bg-black position-absolute opacity-70"
+                                        style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                    <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                        style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">區塊戀-他的私生活</p>
+                                            <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                        </div>
+                                        <span
+                                            class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">區塊戀-他的私生活</h3>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3 mb-4 mb-lg-12" style="position: absolute; left: 50%; top: 0px;">
+                        <a href="./art-intro.html" class="hover">
+                            <div class="bg-white p-2 p-lg-6 position-relative">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art10.jpg?raw=true"
+                                    alt="夏娃的醜聞">
+                                <div class="d-none hover-block-lg">
+                                    <div class="position-absolute bg-black position-absolute opacity-70"
+                                        style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                    <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                        style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                                            <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                        </div>
+                                        <span
+                                            class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">夏娃的醜聞</h3>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3 mb-4 mb-lg-12"
+                        style="position: absolute; left: 50%; top: 171px;">
+                        <a href="./art-intro.html" class="hover">
+                            <div class="bg-white p-2 p-lg-6 position-relative">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art02.jpg?raw=true"
+                                    alt="藍色啤酒海">
+                                <div class="d-none hover-block-lg">
+                                    <div class="position-absolute bg-black position-absolute opacity-70"
+                                        style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                    <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                        style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                                            <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                        </div>
+                                        <span
+                                            class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">藍色啤酒海</h3>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3 mb-4 mb-lg-12"
+                        style="position: absolute; left: 0%; top: 362px;">
+                        <a href="./art-intro.html" class="hover">
+                            <div class="bg-white p-2 p-lg-6 position-relative">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art11.jpg?raw=true"
+                                    alt="沒有人愛我">
+                                <div class="d-none hover-block-lg">
+                                    <div class="position-absolute bg-black position-absolute opacity-70"
+                                        style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                    <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                        style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">沒有人愛我</p>
+                                            <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                        </div>
+                                        <span
+                                            class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">沒有人愛我</h3>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3 mb-4 mb-lg-12"
+                        style="position: absolute; left: 0%; top: 501px;">
+                        <a href="./art-intro.html" class="hover">
+                            <div class="bg-white p-2 p-lg-6 position-relative">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art12.jpg?raw=true"
+                                    alt="不哭不哭眼淚是珍珠">
+                                <div class="d-none hover-block-lg">
+                                    <div class="position-absolute bg-black position-absolute opacity-70"
+                                        style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                    <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                        style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">不哭不哭眼淚是珍珠</p>
+                                            <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                        </div>
+                                        <span
+                                            class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">不哭不哭眼淚是珍珠</h3>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3 mb-4 mb-lg-12"
+                        style="position: absolute; left: 50%; top: 549px;">
+                        <a href="./art-intro.html" class="hover">
+                            <div class="bg-white p-2 p-lg-6 position-relative">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art03.jpg?raw=true"
+                                    alt="十分鐘就到">
+                                <div class="d-none hover-block-lg">
+                                    <div class="position-absolute bg-black position-absolute opacity-70"
+                                        style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                    <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                        style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">十分鐘就到</p>
+                                            <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                        </div>
+                                        <span
+                                            class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">十分鐘就到</h3>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3 mb-4 mb-lg-12 d-none d-lg-block"
+                        style="position: absolute; left: 0%; top: 679px;">
+                        <a href="./art-intro.html" class="hover">
+                            <div class="bg-white p-2 p-lg-6 position-relative">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art04.jpg?raw=true"
+                                    alt="我這樣有美嗎">
+                                <div class="d-none hover-block-lg">
+                                    <div class="position-absolute bg-black position-absolute opacity-70"
+                                        style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                    <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                        style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                                            <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                        </div>
+                                        <span
+                                            class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">我這樣有美嗎</h3>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-3 mb-4 mb-lg-12 d-none d-lg-block"
+                        style="position: absolute; left: 0%; top: 818px;">
+                        <a href="./art-intro.html" class="hover">
+                            <div class="bg-white p-2 p-lg-6 position-relative">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art27.jpg?raw=true"
+                                    alt="我真的受傷了">
+                                <div class="d-none hover-block-lg">
+                                    <div class="position-absolute bg-black position-absolute opacity-70"
+                                        style="top: 24px; left: 24px; right: 24px; bottom: 24px;"></div>
+                                    <div class="position-absolute border border-white p-4 d-flex flex-column justify-content-between"
+                                        style="top: 40px; left: 40px; right: 40px; bottom: 40px;">
+                                        <div class="text-white">
+                                            <p class="fw-bold mb-4">唯一想擁有的人，唯一不可以擁有的</p>
+                                            <p><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                                        </div>
+                                        <span
+                                            class="btn-triangle btn-white font-squada py-2 px-12 align-self-end">MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="fs-sm fw-normal py-2 fs-lg-6 fw-lg-bold py-lg-4 border-bottom-lg">我真的受傷了</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- nav-tabs end -->
+
+</main>

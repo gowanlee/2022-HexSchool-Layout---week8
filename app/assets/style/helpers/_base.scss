@@ -1,0 +1,25 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    //outline: 1px solid yellow;
+}
+ 
+// 清除點擊按鈕及連結出現的邊框及陰影
+button:focus , button:active:focus , a:focus , a:active:focus , input:focus , input:active:focus , select:focus , select:active:focus {
+    outline: none !important; 
+    box-shadow: none !important; 
+}
+
+label {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}

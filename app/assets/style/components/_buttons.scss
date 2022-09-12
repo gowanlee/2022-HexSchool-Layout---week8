@@ -1,0 +1,66 @@
+.btn{
+    // 按鈕右下三角形
+    &-triangle {
+        position: relative;
+
+        &::after {
+            content: " ";
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            border-left: 16px solid transparent;
+            border-bottom: 16px solid $secondary ;
+        }
+
+        &:hover::after {
+            border-bottom: 16px solid $black;
+        }
+    }
+
+    // 白色按鈕
+    &-white {
+        background-color: $white;
+        border:1px solid $black;
+
+        &:hover {
+            background-color: $secondary;
+            color: $white;
+        }
+    }
+
+    &-border:hover {
+        background-color: $secondary;
+        color: $white;
+        outline: 1px solid $black;
+    }
+
+    &-check:checked + .label-check {
+        background-color: transparent !important;
+        color: $black !important;
+        border: 2px solid $secondary !important;
+
+        .check {
+            display: inline-block !important;
+        }
+    }
+}
+
+.btn-collapse[aria-expanded="true"] {
+    .open {
+        display: block;
+    }
+    .close {
+        display: none;
+    }
+}
+
+.btn-collapse[aria-expanded="false"] {
+    .open {
+        display: none;
+    }
+    .close {
+        display: block;
+    }
+}
