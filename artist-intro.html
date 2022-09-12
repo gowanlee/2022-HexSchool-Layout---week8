@@ -1,10 +1,186 @@
----
-title: 藝術家介紹 - NFT藝術家交易平台 | ART NFT
-layout: ./app/layout.ejs
-engine: ejs
-current: artist-intro
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>藝術家介紹 - NFT藝術家交易平台 | ART NFT</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <!-- Google Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+    <!-- Google Fonts end-->
+
+    <!-- font awesome start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- font awesome start-->
+
+    <!-- swiper start -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">  
+    <!-- swiper end -->
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light p-0 fixed-top">
+      <div class="container position-relative">
+        <h1 class="py-4 py-lg-8"><a class="navbar-brand overflow-hidden text-nowrap d-block" href="./index.html">ART NFT</a></h1>
+
+        <div>
+          <!-- search button -->
+          <button class="link-primary p-0 border-0 d-lg-none" id="searchBtn" type="button">
+            <i class="fa-solid fa-magnifying-glass fs-md d-flex align-items-center"></i>
+          </button>
+
+          <!-- hamburger button -->
+          <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-bs-backdrop="true">
+            <i class="menu-icon fa-solid fa-bars fs-md d-flex align-items-center justify-content-end" style="width: 21px;"></i>
+            <i class="close-icon fa-solid fa-xmark fs-md d-flex align-items-center justify-content-end" style="width: 21px;"></i>
+          </button>
+
+        </div>
+
+        <!-- 按下search button 出現的畫面 start -->
+        <div class="position-absolute z-index-2 w-100 h-100 bg-body d-flex align-items-center justify-content-between px-3 d-none d-lg-none" id="searchFrame" style="top: 0; left: 0;">
+          <div class="d-flex align-items-center w-100">
+            <button class="btn ps-0 pe-4 link-primary" id="backBtn"><i class="fa-solid fa-angle-left"></i></button>
+            <input class="w-100 h-100 border-0 bg-body" type="text" placeholder="搜尋作品名稱、藝術家名稱">
+          </div> 
+          <button class="btn link-primary pe-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <!-- 按下search button 出現的畫面 end -->
+
+        <!-- pc navbar-collapse start -->
+        <div class="collapse navbar-collapse flex-lg-row-reverse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-none d-lg-flex align-items-center">
+            <li class="nav-item">
+              <form class="d-flex gap-6 align-items-center justify-content-between px-12 border-start-lg" style="height: 104px;">
+                <input class="form-control border-0 bg-light p-0 fs-sm" style="width: 230px;" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+                <button class="border-0 px-0 py-10 link-primary" type="submit"><i class="fa-solid fa-magnifying-glass fs-4 d-flex align-items-center"></i></button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary fw-bold py-lg-10 px-lg-12 border-start-lg" aria-current="page" href="./art-search.html">探索</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary fw-bold py-lg-10 px-lg-12 border-start-lg" href="./art-ranking.html">市值</a>
+            </li>
+            <li class="nav-item">
+              <button class="link-primary py-lg-10 ps-lg-12 pe-lg-0 border-0 border-start-lg" type="button" data-bs-toggle="modal" data-bs-target="#walletModal"><i class="fa-solid fa-wallet fs-4"></i></button>
+            </li>
+          </ul>
+        </div>
+        <!-- pc navbar-collapse end -->
+
+      </div>
+
+
+      <!-- mobile navbar-collapse start -->
+      <div class="collapse d-lg-none" id="navbarSupportedContent">
+        <!-- cover mask start -->
+        <div class="vh-100 w-100 border position-fixed top-51 start-0 bg-black opacity-65 z-index-1 d-lg-none"></div>
+        <!-- cover mask end -->
+        <ul class="navbar-nav me-auto bg-white py-6 px-3 text-center position-fixed top-51 start-0 w-100 z-index-2 d-lg-none">
+          <li class="nav-item">
+            <a class="nav-link link-primary pb-6 fw-bold fs-md border-bottom" href="./art-search.html">探索</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-primary py-6 fw-bold fs-md" href="./art-ranking.html">市值</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-secondary border py-3 text-white fw-bold fs-md w-100" type="button" data-bs-toggle="modal" data-bs-target="#walletModal">連結錢包</button>
+          </li>
+        </ul>
+      </div> 
+      <!-- mobile navbar-collapse end -->
+
+    </nav>
+
+    <!-- wallet modal start-->
+    <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down">
+        <div class="modal-content">
+          <div class="modal-header p-4 justify-content-center position-relative">
+            <h2 class="modal-title fs-5 fw-normal" id="walletModalLabel">連結你的錢包</h2>
+            <button class="border-0 bg-white position-absolute top-50 end-0 translate-middle d-lg-none" type="button" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <form class="modal-body d-flex flex-column justify-content-between align-items-center pb-0 px-0">
+            <ul class="btn-group list-unstyled d-flex flex-wrap justify-content-center gap-2 py-6 px-4" role="group" aria-label="Basic radio toggle button group">
+              <li class="w-100 w-lg-48">
+                <input type="radio" class="btn-check" name="myWallet" id="MetaMask" autocomplete="off">
+                <label class="label-check link-primary border p-4 w-100 d-flex align-items-center justify-content-between" for="MetaMask">
+                  <div>
+                    <img class="me-4" style="height: 16px; width: 16px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/logo/connect01.png?raw=true" alt="MetaMask">
+                    <span class="font-squada">MetaMask</span>
+                  </div>
+                  <i class="check fa-solid fa-check text-secondary d-none"></i>
+                </label>
+              </li>
+              <li class="w-100 w-lg-48">
+                <input type="radio" class="btn-check" name="myWallet" id="CoinbaseWallet" autocomplete="off">
+                <label class="label-check link-primary border p-4 w-100 d-flex align-items-center justify-content-between" for="CoinbaseWallet">
+                  <div>
+                    <img class="me-4" style="height: 16px; width: 16px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/logo/connect02.png?raw=true" alt="MetaMask">
+                    <span class="font-squada">Coinbase Wallet</span>
+                  </div>
+                  <i class="check fa-solid fa-check text-secondary d-none"></i>
+                </label>
+              </li>
+              <li class="w-100 w-lg-48"> 
+                <input type="radio" class="btn-check" name="myWallet" id="WalletConnect" autocomplete="off">
+                <label class="label-check link-primary border p-4 w-100 d-flex align-items-center justify-content-between" for="WalletConnect">
+                  <div>
+                    <img class="me-4" style="height: 16px; width: 16px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/logo/connect03.png?raw=true" alt="MetaMask">
+                    <span class="font-squada">WalletConnect</span>
+                  </div>
+                  <i class="check fa-solid fa-check text-secondary d-none"></i>
+                </label>
+              </li>
+              <li class="w-100 w-lg-48">
+                <input type="radio" class="btn-check" name="myWallet" id="Phantom" autocomplete="off">
+                <label class="label-check link-primary border p-4 w-100 d-flex align-items-center justify-content-between" for="Phantom">
+                  <div>
+                    <img class="me-4" style="height: 16px; width: 16px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/logo/connect04.png?raw=true" alt="Phantom">
+                    <span class="font-squada">Phantom</span>
+                  </div>
+                  <i class="check fa-solid fa-check text-secondary d-none"></i>
+                </label>
+              </li>
+              <li class="w-100 w-lg-48">
+                <input type="radio" class="btn-check" name="myWallet" id="Glow" autocomplete="off">
+                <label class="label-check link-primary border p-4 w-100 d-flex align-items-center justify-content-between" for="Glow">
+                  <div>
+                    <img class="me-4" style="height: 16px; width: 16px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/logo/connect05.png?raw=true" alt="MetaMask">
+                    <span class="font-squada">Glow</span>
+                  </div>
+                  <i class="check fa-solid fa-check text-secondary d-none"></i>
+                </label>
+              </li>
+              <li class="w-100 w-lg-48"> 
+                <input type="radio" class="btn-check" name="myWallet" id="Fortmatic" autocomplete="off">
+                <label class="label-check link-primary border p-4 w-100 d-flex align-items-center justify-content-between" for="Fortmatic">
+                  <div>
+                    <img class="me-4" style="height: 16px; width: 16px;" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/logo/connect06.png?raw=true" alt="MetaMask">
+                    <span class="font-squada">Fortmatic</span>
+                  </div>
+                  <i class="check fa-solid fa-check text-secondary d-none"></i>
+                </label>
+              </li>
+            </ul>
+            <button type="submit" class="btn btn-secondary text-white fs-md border py-3 px-lg-12 py-lg-2 w-100 mb-lg-6 w-lg-auto">連結錢包</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- wallet modal end-->
+
+
+    
 <main class="mt-13 mt-lg-lg">
 
     <!-- artist intro start -->
@@ -346,3 +522,22 @@ current: artist-intro
     <!-- nav-tabs end -->
 
 </main>
+
+    <footer class="text-center py-6 border-top border-4 position-relative">
+      <span class="position-absolute bg-black w-100 h-1px d-block" style="top: -8px;"></span>
+      <p>© ART NFT. All Rights Reserved</p>
+    </footer>
+
+    <!-- masonry start -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- masonry end -->
+
+    <!-- swiper start -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+    <!-- swiper end -->
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
