@@ -28,3 +28,55 @@
 5. 小型網站開發可以用Bootstrap、大型網站開發可以用tailwind
 
 6. 未來可以朝不要有自訂語意的class名稱、盡量不要有pages的scss，盡量用元件 component（出現兩處以上）跟通用類別 utilities做到 
+
+
+---------------------------------
+
+
+
+
+整體
+
+1. SCSS 檔案分類可以參考下方文章，不建議全部分到 helpers 唷
+
+https://israynotarray.com/css/20200523/116058774/
+
+2. 使用 button 標籤做的按鈕，設定建議加入 background-color: transparent; 設定為透明色
+
+避免在部分瀏覽器下呈現深灰底。例如導覽列放大鏡的按鈕
+
+3. 中文副標題字型與設計稿不符，需留意字型套用順序
+
+https://i.imgur.com/PurZQC2.png
+
+4. masonry 套件使用的圖片列表，一開始圖片會有疊合的狀態。
+
+可參考其他同學的 JS 設定來嘗試修正
+
+https://i.imgur.com/O0wvH8A.png
+
+推薦可以參考這位同學的：
+
+https://github.com/Cliff1213/NFT_ec
+
+
+
+首頁
+
+1. 「熱門藝術家」區塊內的藝術家姓名的文字大小要符合設計稿
+
+2. Join Us 與 創建並出售你的藝術品，建議可以共同寫在 h2 標籤裡面。（ 這樣才會跟上方的標題結構一致）
+
+
+
+artworks.html
+
+1. 確認按鈕需要佔滿水平方向才符合設計稿
+
+https://i.imgur.com/RysoCSF.png
+
+
+
+art-ranking.html
+
+1. 作品名稱可以加上 a 連結以及 hover 樣式，連到 art-intro.html
