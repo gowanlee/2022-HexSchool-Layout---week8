@@ -35,27 +35,16 @@
 
 <b>整體</b>
 
-1. SCSS 檔案分類可以參考下方文章，不建議全部分到 helpers 唷
+1. SCSS 檔案分類可以[參考文章](https://israynotarray.com/css/20200523/116058774/
+)，不建議全部分到 helpers 唷
 
-https://israynotarray.com/css/20200523/116058774/
+2. 使用 button 標籤做的按鈕，設定建議加入 background-color: transparent; 設定為透明色，避免在部分瀏覽器下呈現深灰底。例如導覽列放大鏡的按鈕
 
-2. 使用 button 標籤做的按鈕，設定建議加入 background-color: transparent; 設定為透明色
-
-避免在部分瀏覽器下呈現深灰底。例如導覽列放大鏡的按鈕
-
-3. 中文副標題字型與設計稿不符，需留意字型套用順序
-
-https://i.imgur.com/PurZQC2.png
+3. [中文副標題字型與設計稿不符，需留意字型套用順序](https://i.imgur.com/PurZQC2.png)
 
 4. masonry 套件使用的圖片列表，一開始圖片會有疊合的狀態。
-
-可參考其他同學的 JS 設定來嘗試修正
-
-https://i.imgur.com/O0wvH8A.png
-
-推薦可以參考這位同學的：
-
-https://github.com/Cliff1213/NFT_ec
+- [可參考其他同學的 JS 設定來嘗試修正](https://i.imgur.com/O0wvH8A.png)
+- [推薦可以參考這位同學的](https://github.com/Cliff1213/NFT_ec)
 <br>
 <br>
 <br>
@@ -71,9 +60,7 @@ https://github.com/Cliff1213/NFT_ec
 
 <b>artworks.html</b>
 
-1. 確認按鈕需要佔滿水平方向才符合設計稿
-
-https://i.imgur.com/RysoCSF.png
+1. [確認按鈕需要佔滿水平方向才符合設計稿](https://i.imgur.com/RysoCSF.png)
 <br>
 <br>
 <br>
