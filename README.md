@@ -29,13 +29,11 @@
 
 6. 未來可以朝不要有自訂語意的class名稱、盡量不要有pages的scss，盡量用元件 component（出現兩處以上）跟通用類別 utilities做到 
 
+-------------------------------------
+ 
+下方提供關於作業細節的建議：
 
----------------------------------
-
-
-
-
-整體
+<b>整體</b>
 
 1. SCSS 檔案分類可以參考下方文章，不建議全部分到 helpers 唷
 
@@ -58,25 +56,28 @@ https://i.imgur.com/O0wvH8A.png
 推薦可以參考這位同學的：
 
 https://github.com/Cliff1213/NFT_ec
+<br>
+<br>
+<br>
 
-
-
-首頁
+<b>首頁</b>
 
 1. 「熱門藝術家」區塊內的藝術家姓名的文字大小要符合設計稿
 
 2. Join Us 與 創建並出售你的藝術品，建議可以共同寫在 h2 標籤裡面。（ 這樣才會跟上方的標題結構一致）
+<br>
+<br>
+<br>
 
-
-
-artworks.html
+<b>artworks.html</b>
 
 1. 確認按鈕需要佔滿水平方向才符合設計稿
 
 https://i.imgur.com/RysoCSF.png
+<br>
+<br>
+<br>
 
-
-
-art-ranking.html
+<b>art-ranking.html</b>
 
 1. 作品名稱可以加上 a 連結以及 hover 樣式，連到 art-intro.html
